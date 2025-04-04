@@ -10,9 +10,14 @@ function getRandomElement(array) {
 
 
 function excuseGenerator() {
-    return `${getRandomElement(who)} ${getRandomElement(action)} ${getRandomElement(what)} ${getRandomElement(when)}`;
+    return getRandomElement(who) + " " +
+           getRandomElement(action) + " " +
+           getRandomElement(what) + " " +
+           getRandomElement(when);
 }
+
 
 window.onload = function () {
     document.getElementById('excuse').innerHTML = excuseGenerator();
 };
+
